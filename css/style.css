@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	z-index: -1;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/bgImg.jpg') center center no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: contain;
+}
+
+
+.mainDiv .logo {
+    width: 134px;
+    height: 58px;
+    object-fit: contain;
+}
+
+.mainDiv .imgCarousel {
+	width: 1100px;
+	height: 600px;
+	object-fit: contain;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mainDiv .product1 {
+	height: 100px;
+	background-color: lightcyan;
+	border-radius: 5px;
+}
+
+#example {
+	background: #23252924;
+}
+
+section p {
+	font-style: italic;
+	color: #ffffff;
+}
+
+section form {
+	background-color: rgb(53 53 53);
+	padding: 30px;
+    border-radius: 4px;
+}
+
+section form label {
+	color:  #ffffff;
+}
+
+@media (max-width: 768px) {
+
+	.mainDiv .imgCarousel {
+	    height: 200px;
+	}
+
+	#navbarNav {
+		display: none !important;
+	}
+
+}
